@@ -1,38 +1,42 @@
+*{
+  box-sizing: border-box;
+}
 .App {
+  display: flex;
+  justify-content: center;
+}
+h1,label,input,button,.error,textarea{
+  margin:15px;
+}
+input,button,textarea {
+  min-width: 400px;
+  display: block;
+  padding: 6px;
+  font-style: 14px;
+  line-height: 1.4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button{
+  background-color:#ef9b08;
+  color:white;
+}
+.footer{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.error{
+  color:tomato;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-row{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.flex-row-add{
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addremove{
+  min-width:30px;
+}
+.submitBtn:disabled{
+  background-color: gray;
 }
